@@ -1,0 +1,23 @@
+class Iphone:
+
+      company_name = 'Iphone'
+      website      = 'www.Apple.com'
+
+      def customerDetails(self):
+          print("Justin, 1-2-3, New York city, United States")
+
+
+class Iphone15pro(Iphone):
+
+    def __init__(self):
+        self.name = "Iphone15pro"
+        self.year = "2023"
+
+    def ProductDetails(self):
+        print("Company Name:", self.company_name)
+        print("Website:", self.website)
+        print("Product name:", self.name)
+        print("Year:", self.year)
+
+moblieobj = Iphone15pro()
+moblieobj.ProductDetails()
