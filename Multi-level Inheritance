@@ -1,0 +1,21 @@
+#Multi-level Inheritance
+class GrandParent:
+
+    farm_land = "10 acres of farm land"
+    def property(self):
+        print("farm land:", self.farm_land)
+
+class Parent(GrandParent):
+
+    building = "3 storey building"
+    def house(self):
+        print("building:", self.building)
+
+class Son(Parent):
+
+    car = "BMW car"
+
+Son_obj = Son()
+print("I Have", Son_obj.farm_land)
+print("and", Son_obj.building)
+print("and also", Son_obj.car)
